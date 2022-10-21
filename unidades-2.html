@@ -1,0 +1,61 @@
+<!--
+    Distâncias absolutas <length>
+    São fixas e não alteram seu valor.
+
+    | Unidade | Nome                | Equivalência         |
+    |---------|---------------------|----------------------|
+    | cm      | Centímetros         | 1cm = 96px/2.54      | 
+    | in      | Inches (polegadas)  | 1in = 2.54cm = 96px  | 
+    | px      | Pixels              | 1px = 1/96th of lin  |
+
+    * o mais comum e mais utilizado é o px
+    * não é recomendado usar cm
+
+    Distâncias relativas
+
+    São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
+    Benefícios: Maior adaptação aos diferentes tipos de tela.
+
+    | Unidade  | Relativo a                                    | 
+    |----------|-----------------------------------------------|
+    | em       | Tamanho da font do elemento pai               | 
+    | rem      | Tamanho da font do elemento raiz (root/html)  |
+    | vw       | 1% da viewport width                          | 
+    | vh       | 1% da viewport height                         |
+    
+    :root {
+        font-size: 18px;
+    }
+
+    /* OU */
+
+    html {
+       font-size: 18px; 
+    }
+
+    Documentação: https://www.w3.org/Style/Examples/007/units.pt_BR.html
+    Documentação do MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+
+    Dica do Professor 1:
+
+    Quando trabalhamos com designs responsivos, ou seja, layouts flexiveis que se adaptam para qualquer tipo de tela, é interessante utilizar a unidade rem.
+
+    User agent (Browser), boa na parte deles, usam o font-size: 16px
+
+    Como converter px para rem
+    valor em px / valor da font do user agent
+
+    Ex: 32px / 16px = rem
+
+    Dica do Professor 2:
+
+    Outra possibilidade é mudar a configuração do user agent de 16px para 10px, usando % e utilizando a regra de 3 da matemática, desta forma conseguimos cravar a unidade rem.
+
+    Transformar o user agent de 16px para 10px em %
+
+    User Agent = 16px = 100%
+
+    10*100 = 1000
+    1000/16 = 62,6%
+    
+-->
