@@ -1,0 +1,97 @@
+<!--
+    Trabalhando com cores
+
+    *** Onde posso mudar cores no CSS? ***
+
+    - bcakground-color (Para caixas)
+    - color (Para Textos)
+    - border-color (Para boradas de caixa)
+    - entre outros
+
+    * Quais são os valores para atribuir?
+
+    - palavras (blue, red, white, transparent)
+    - valores em hexadecimal (#fff321)
+    - Funções: rgb, hsl, rgba, hsla
+
+    Anatomia:
+
+    Hexadecimal
+
+    #FF0000 (2 primeiros digitos RED)
+    #00FF00 (Próximos 2 digitos GREEN)
+    #0000FF (2 últimos digitos BLUE) 0-9 e A-F
+
+    RGB
+
+    rgb(255, 0, 0) - RED
+    rgb(0, 255, 0) - GREEN
+    rgb(0, 0, 255) - BLUE
+
+    RGBA
+
+    rgba(255, 0, 0, 0.3) - RED Opacity (Opacidade)
+    rgba(0, 255, 0, 0.3) - GREEN Opacity (Opacidade)
+    rgba(0, 0, 255, 0.3) - BLUE Opacity (Opacidade)
+
+    HSL
+
+    hsl (hue, saturation, lightness)
+    hue -> Define um grau de cores (de 0 a 360) - 0 ou 360 é vermelho, 120 é verde, 240 é azul
+    saturation -> Define a saturação - 0% é um tom de cinza e 100% é a cor total (saturação total)
+    lightness -> Define a leveza - 0% é preto, 50% é normal e 100% é branco
+
+    hsl(360, 100%, 50%) - Vermelho normal
+    hsl(360, 100%, 75%) - Vermelho claro
+    hsl(360, 100%, 25%) - Vermelho escuro
+    hsl(360, 40%, 70%) - Vermelho pastel
+
+    hsla (hue, saturation, lightness, alpha)
+    alpha -> Define a opacidade como um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco)
+
+    hsl(360, 100%, 50%, 0.3) - Vermelho normal com opacidade
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and Color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            /* height: 100vh;
+            background: hsla(128, 90%, 50%, 0.5); */
+        }
+        .bg-box {
+            width: 600px;
+            height: 600px;
+            padding: 16px;
+            border: 8px dotted #000;
+            background-color: #ff12ff;
+
+            /* Imagem de fundo */
+            /* background-image: url("https://source.unsplash.com/random");
+            background-size: 20%;
+            background-repeat: no-repeat;
+            background-position: center canter;
+            background-origin: content-box; */
+            /* background-attachment: fixed; */
+            /* background: radial-gradient(rgba(0, 90, 0, 1), rgba(0, 90, 0, 0.5)); */
+
+            /* SUPER COMBO - Shorthand */
+            background: linear-gradient(rgba(0, 90, 0, 1), rgba(0, 90, 0, 0.1)), url("https://source.unsplash.com/random") no-repeat center center / 50% content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-box"></div>
+        <h1>Testando backgrounds</h1>
+    </div>
+</body>
+</html>
