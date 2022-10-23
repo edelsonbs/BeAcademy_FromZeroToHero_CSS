@@ -1,0 +1,27 @@
+/* ul li {
+    color: blue;
+    font-size: 2.3rem;
+} */
+
+ul p:first-child {
+    color: red;
+}
+
+body p:nth-of-type(2) {
+    color: red;
+    font-size: 24px;
+}
+
+body p:nth-child(4) {
+    color: blue;
+}
+
+ul li:nth-child(even){
+    background: red;
+    color: white;
+}
+
+ul li:nth-child(odd){
+    background: blue;
+    color: white;
+}
