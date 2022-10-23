@@ -1,0 +1,72 @@
+.container {
+    width: 25rem;
+    height: auto;
+    padding: 1rem;
+    background-color: blue;
+    margin-bottom: 0.5rem;
+}
+
+.text-box h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.text-box p {
+    color: wheat;
+}
+
+/* Breakpoint 575px */
+@media (min-width: 575px) {
+    .container {
+        background: red;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Breakpoint 768px */
+@media (min-width: 768px) {
+    .container {
+        width: 40.6rem;
+        background: green;
+        margin-bottom: 1.12rem;
+    }
+    .text-box h2,
+    .text-box p {
+        color: aqua;
+    }
+}
+
+/* Breakpoint 992px */
+@media (min-width: 992px) {
+    body {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 43.7rem;
+        padding: 1.25rem;
+        background-color: black;
+        display: flex;
+        margin-right: 0.5rem;
+        justify-content: center;
+    }
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-box h2 {
+        color: green;
+        font-size: 3rem;
+    }
+    .text-box p {
+        color: white;
+        font-size: 1.5rem;
+    }
+}
